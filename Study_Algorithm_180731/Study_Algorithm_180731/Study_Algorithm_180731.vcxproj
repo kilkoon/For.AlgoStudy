@@ -145,6 +145,8 @@
     <ClCompile Include="JadenCase 문자열 만들기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="MaxProductOfThree.cpp" />
+    <ClCompile Include="Triangle.cpp" />
     <ClCompile Include="다음큰숫자.cpp" />
     <ClCompile Include="최솟값 만들기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
