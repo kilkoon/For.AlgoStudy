@@ -42,5 +42,8 @@
     <ClCompile Include="숫자의 표현.cpp">
       <Filter>day3_programmers</Filter>
     </ClCompile>
+    <ClCompile Include="fish.cpp">
+      <Filter>day3_codility</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
