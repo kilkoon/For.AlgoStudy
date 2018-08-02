@@ -4,6 +4,7 @@
 using namespace std;
 
 int solution(int n);
+int Get_NumberOne(int input);
 
 void main()
 {
@@ -14,48 +15,40 @@ void main()
 int solution(int n) {
 	
 	int answer = n;
-	int input = n;
 	int oneCount = 0;
 
-	do
-	{
-		int remainder = input % 2;
-		if (1 == remainder)
-			++oneCount;
-		input /= 2;
-		
-		if(1 == input)
-			++oneCount;
-	} while (1 != input);
+	oneCount = Get_NumberOne(n);
 	
-
-	// 2진수 변환후 1의 개수가 같은 케이스 : xor 한 이후에 1의 개수가 짝수이면
 	while (1)
 	{
 		++answer;
 
-		int count = 0;
-
-		do
-		{
-			int remainder = answer % 2;
-			if (1 == remainder)
-				++count;
-			answer /= 2;
-			if( 1== answer)
-				++count;
-
-			if (oneCount < count)
-				continue;
-		} while (1 != answer);
-		
-		
-		if (oneCount == count)
+		if (oneCount == Get_NumberOne(answer))
 			return answer;
 	}
 
 	return 0;
 }
+
+int Get_NumberOne(int input)
+{
+	int quotient = input;
+	int count = 0;
+
+	do
+	{
+		int remainder = quotient % 2;
+		if (1 == remainder)
+			++count;
+		quotient /= 2;
+
+		if (1 == quotient)
+			++count;
+	} while (1 != quotient);
+
+	return count;
+}
+
 
 /**
 * Counts number of 1 bits in a 32 bit unsigned number.

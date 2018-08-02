@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
+#include <functional>
 using namespace std;
 
 int solution(vector<int> A, vector<int> B);
@@ -12,20 +14,16 @@ void main()
 
 int solution(vector<int> A, vector<int> B)
 {
-	int size = A.size();
+	int sum = 0;
+	size_t inputSize = A.size();
 
-	vector<int> sum;
-	sum.resize(size, 0);
+	sort(A.begin(), A.end(), greater<int>());
+	sort(B.begin(), B.end(), less<int>());
 
-	for (int i = 0; i < size; ++i)
+	for (size_t i = 0; i<inputSize; ++i)
 	{
-		for (int j = 0; j < size; ++j)
-		{
-			sum[j] = A[i] * B[j];
-
-		}
+		sum += A[i] * B[i];
 	}
-
 	
-	return 0;
+	return sum;
 }

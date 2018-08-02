@@ -39,5 +39,8 @@
     <ClCompile Include="가장큰정사각형찾기.cpp">
       <Filter>day3_programmers</Filter>
     </ClCompile>
+    <ClCompile Include="숫자의 표현.cpp">
+      <Filter>day3_programmers</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
