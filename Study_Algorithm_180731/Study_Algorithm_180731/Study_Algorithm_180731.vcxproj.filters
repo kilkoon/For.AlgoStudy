@@ -36,5 +36,8 @@
     <ClCompile Include="Triangle.cpp">
       <Filter>day3_codility</Filter>
     </ClCompile>
+    <ClCompile Include="가장큰정사각형찾기.cpp">
+      <Filter>day3_programmers</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

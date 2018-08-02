@@ -34,18 +34,20 @@ int solution(int n) {
 	{
 		++answer;
 
-		int result = n ^ answer;
 		int count = 0;
 
 		do
 		{
-			int remainder = result % 2;
+			int remainder = answer % 2;
 			if (1 == remainder)
 				++count;
-			result /= 2;
-			if( 1== result)
+			answer /= 2;
+			if( 1== answer)
 				++count;
-		} while (1 != result);
+
+			if (oneCount < count)
+				continue;
+		} while (1 != answer);
 		
 		
 		if (oneCount == count)
