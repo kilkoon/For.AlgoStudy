@@ -45,5 +45,8 @@
     <ClCompile Include="fish.cpp">
       <Filter>day3_codility</Filter>
     </ClCompile>
+    <ClCompile Include="StoneWall.cpp">
+      <Filter>day3_codility</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

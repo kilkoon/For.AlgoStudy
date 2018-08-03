@@ -28,6 +28,7 @@ int solution(vector<int>& A, vector<int>& B)
 		}
 
 		if (true == route.empty()
+			|| (1 == route.top().second && 1 == B[i])
 			|| 0 == route.top().second)
 		{
 			route.push(pair<int, int>(A[i], B[i]));
