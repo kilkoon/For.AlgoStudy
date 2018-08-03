@@ -30,6 +30,7 @@ int solution(vector<int> &H) {
 		if (parts.top() < num)
 		{
 			parts.push(num);
+			lowPoints.emplace_back(num);
 			continue;
 		}
 		else if (parts.top() > num)
