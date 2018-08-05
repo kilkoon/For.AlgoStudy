@@ -48,5 +48,14 @@
     <ClCompile Include="StoneWall.cpp">
       <Filter>day3_codility</Filter>
     </ClCompile>
+    <ClCompile Include="NumberOfDiscsIntersections.cpp">
+      <Filter>day3_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="equiLeader.cpp">
+      <Filter>day3_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="dominator.cpp">
+      <Filter>day3_codility</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

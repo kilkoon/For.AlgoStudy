@@ -31,9 +31,9 @@ int solution(vector<int> &A)
 			{
 				if (A[k] < 0)
 					continue;
-				if (A[i] < A[j] + A[k])
-					return 1;
-				else if (A[i] == A[k] && A[k] == A[j])
+
+				size_t sum = size_t(A[j])+ size_t(A[k]);
+				if (size_t(A[i])< sum)
 					return 1;
 			}
 		}
