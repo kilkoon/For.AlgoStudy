@@ -16,6 +16,9 @@
     <Filter Include="day3_programmers">
       <UniqueIdentifier>{6ee83fa9-5f74-42ab-a365-1865873b2a5b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="day4_programmers">
+      <UniqueIdentifier>{3854b59d-fd5a-4815-b6ac-b978f6d893f7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="피보나치.cpp">
@@ -56,6 +59,9 @@
     </ClCompile>
     <ClCompile Include="dominator.cpp">
       <Filter>day3_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="행렬의곱셈.cpp">
+      <Filter>day4_programmers</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
