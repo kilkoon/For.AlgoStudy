@@ -95,3 +95,26 @@ int solution(vector<int> &A)
 
 	return discs.size();
 }
+
+int solution(vector<int> &A)
+{
+	size_t inputSize = A.size();
+	vector<pair<int, int>> discPair;
+
+	for (size_t i = 0; i < inputSize; ++i)
+	{
+		discPair.emplace_back(pair<int, int>(i-A[i], i+A[i]));
+	}
+
+	size_t count = 0;
+	for (size_t i = 0; i < inputSize - 1; ++i)
+	{
+		for (size_t j = 0; j < inputSize; ++j)
+		{
+			if (max(discPair[i].first, discPair[j].first) <= min(discPair[i].second, discPair[j].second))
+				++count;
+		}
+	}
+
+	return count;
+}

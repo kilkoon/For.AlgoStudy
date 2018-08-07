@@ -9,12 +9,13 @@ using namespace std;
 int solution(int n)
 {
 	size_t count = 0;
+	size_t max = n / 2 + 1;
 
-	for (size_t i = 1; i <= n/2; ++i)
+	for (size_t i = 1; i <= max - 1; ++i)
 	{
-		for (size_t j = i+1; j <= n / 2 + 1; ++j)
+		for (size_t j = i+1; j <= max; ++j)
 		{
-			size_t sum = (pow(j, 2) - pow(i, 2) + i + j) / 2;
+			size_t sum = size_t((j*j - i*i + i + j) * 0.5f);
 			if (sum > n)
 				break;
 			if (n == sum)
