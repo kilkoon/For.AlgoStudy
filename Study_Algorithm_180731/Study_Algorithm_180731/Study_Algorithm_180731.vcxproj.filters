@@ -63,5 +63,11 @@
     <ClCompile Include="행렬의곱셈.cpp">
       <Filter>day4_programmers</Filter>
     </ClCompile>
+    <ClCompile Include="N개의최소공배수.cpp">
+      <Filter>day4_programmers</Filter>
+    </ClCompile>
+    <ClCompile Include="거스름돈.cpp">
+      <Filter>day4_programmers</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

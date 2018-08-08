@@ -152,11 +152,13 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="NumberOfDiscsIntersections.cpp" />
+    <ClCompile Include="N개의최소공배수.cpp" />
     <ClCompile Include="StoneWall.cpp" />
     <ClCompile Include="Triangle.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="가장큰정사각형찾기.cpp" />
+    <ClCompile Include="거스름돈.cpp" />
     <ClCompile Include="다음큰숫자.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
