@@ -69,5 +69,8 @@
     <ClCompile Include="거스름돈.cpp">
       <Filter>day4_programmers</Filter>
     </ClCompile>
+    <ClCompile Include="가장긴팰린드롬.cpp">
+      <Filter>day4_programmers</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
