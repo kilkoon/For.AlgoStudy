@@ -19,6 +19,9 @@
     <Filter Include="day4_programmers">
       <UniqueIdentifier>{3854b59d-fd5a-4815-b6ac-b978f6d893f7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="day4_codility">
+      <UniqueIdentifier>{eac83d6f-19bb-4d04-ba40-4ee2ec9167be}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="피보나치.cpp">
@@ -71,6 +74,9 @@
     </ClCompile>
     <ClCompile Include="가장긴팰린드롬.cpp">
       <Filter>day4_programmers</Filter>
+    </ClCompile>
+    <ClCompile Include="MaxDoubleSliceSum.cpp">
+      <Filter>day4_codility</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

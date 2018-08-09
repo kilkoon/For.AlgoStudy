@@ -1,42 +1,54 @@
-#include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
 #include <string>
 #include <algorithm>
+#include <iostream>
+
 
 using namespace std;
 
-int GetPalindrome(int& maxLen, char* s);
-int solution(char* s) {
-	int answer = 0;
+int solution(char* s);
 
-
-	return answer;
+void main()
+{
+	cout << solution("abacde")<< endl;
 }
 
-int GetPalindrome(int & maxLen, char * s)
-{
-	size_t len = strlen(s);
+
+
+int solution(string s) {
 	
-	if (len % 2 == 0)
+	size_t len = s.length();
+	string str = s;
+
+	for (size_t i = 0; i < len; ++i)
 	{
-		for (size_t i = 1; i <= len / 2; ++i)
+		bool bEven = 0 == (len - i) % 2;
+		for (size_t j = 0; j <= i; ++j)
 		{
-			if (s[len / 2 - i] == s[len / 2 + i-1])
-				return max(int(len), maxLen);
-		}
-	}
-	else
-	{
-		for (size_t i = 1; i <= len / 2; ++i)
-		{
-			if (s[len / 2 - i] == s[len / 2 + i])
-				return max(int(len), maxLen);
+			string sub = str.substr(j, len-i);
+			size_t subLen = sub.length();
+			bool bPelin = false;
+
+			for (size_t k = 1; k <= subLen / 2; ++k)
+			{
+				if (bEven)
+				{
+					if (true == (sub[subLen / 2 - k] == sub[subLen / 2 + k - 1]))
+						bPelin = true;
+					else
+						break;
+				}
+				else
+				{
+					if (true == (sub[subLen / 2 - k] == sub[subLen / 2 + k]))
+						bPelin = true;
+					else
+						break;
+				}
+			}
+			if (bPelin)
+				return subLen;
 		}
 	}
 
-	if (1 == len)
-		return 1;
-	else
-		return GetPalindrome(maxLen, );
+	return 1;
 }
