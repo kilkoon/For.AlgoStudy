@@ -12,7 +12,7 @@ void main()
 	cout << solution("abacde")<< endl;
 }
 
-bool IsPalindrom(string& s, bool bEven);
+bool IsPalindrom(string& s);
 
 int solution(string s) {
 	
@@ -24,12 +24,11 @@ int solution(string s) {
 
 	for (size_t i = 0; i < len; ++i)
 	{
-		bool bEven = 0 == (len - i) % 2;
 		for (size_t j = 0; j <= i; ++j)
 		{
 			string sub = str.substr(j, len-i);
 
-			if (IsPalindrom(sub, bEven))
+			if (IsPalindrom(sub))
 				return sub.length();
 		}
 	}
@@ -50,8 +49,7 @@ bool IsPalindrom(string & sub, bool bEven)
 				bPelin = true;
 			else
 			{
-				bPelin = false;
-				break;
+				return false;
 			}		
 		}
 		else
@@ -60,8 +58,7 @@ bool IsPalindrom(string & sub, bool bEven)
 				bPelin = true;
 			else
 			{
-				bPelin = false;
-				break;
+				return false;
 			}
 		}
 	}
@@ -69,21 +66,14 @@ bool IsPalindrom(string & sub, bool bEven)
 	return bPelin;
 }
 
-bool IsPalindrom(string & sub, bool bEven)
+bool IsPalindrom(string & sub)
 {
-	string counter = sub;
 	size_t size = sub.length();
 	size_t halfSize = size / 2;
+	string counter = sub.substr(0, halfSize);
 
 	for (size_t i = 0; i<halfSize; ++i)
 		counter[i] = sub[size - i-1];
-
-	//for (size_t i = 0; i<halfSize; ++i)
-	//{
-	//	if (counter[i] != sub[i])
-	//		return false;
-	//}
-	//return true;
 
 	string half = sub.substr(0, halfSize);
 	if (0 == counter.compare(half))

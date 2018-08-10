@@ -78,5 +78,11 @@
     <ClCompile Include="MaxDoubleSliceSum.cpp">
       <Filter>day4_codility</Filter>
     </ClCompile>
+    <ClCompile Include="CountFactors.cpp">
+      <Filter>day4_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="CountSemiPrimes.cpp">
+      <Filter>day4_codility</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
