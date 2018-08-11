@@ -2,46 +2,43 @@
 #include <vector>
 #include <algorithm>
 #include <functional>
-#include <stack>
 using namespace std;
 
-void GetMoney(size_t& count, int sum, stack<int> moneyStack);
+
+int GetMoney(int sum, vector<int>* moneyStack);
 
 int solution(int n, vector<int> money) {
 
-	sort(money.begin(), money.end(), less<int>());
-	size_t count = 0;
-	stack<int> moneyStack;
-	for (int num : money)
-		moneyStack.push(num);
-	
+	//sort(money.begin(), money.end(), less<int>());
 	int sum = n;
+
+	return GetMoney(sum, &money);
+}
+
+int GetMoney(int sum, vector<int>* moneyVec)
+{
+	vector<int> tmpVec = *moneyVec;
 	
-	GetMoney(count, sum, moneyStack);
+	if (0 == sum)
+	{
+		return 1;
+	}
+	else if (0 > sum)
+		return 0;
 
+	if (0 == tmpVec.size())
+		return 0;
+	
+	int top = *tmpVec.end();
+	int quotient = sum / top;
 
+	tmpVec.pop_back();
+	int count = 0;
+	for (size_t i = 0; i <= quotient; ++i)
+	{
+		count += GetMoney(sum - top*i, &tmpVec);
+	}
 	return count;
 }
 
-void GetMoney(size_t& count, int sum, stack<int> moneyStack)
-{
-	if (0 == sum)
-	{
-		++count;
-		return;
-	}
-	else if (0 > sum)
-		return;
 
-	if (true == moneyStack.empty())
-		return;
-
-	int top = moneyStack.top();
-	int quotient = sum / top;
-
-	moneyStack.pop();
-	for (size_t i = 0; i <= quotient; ++i)
-	{
-		GetMoney(count, sum - top*i, moneyStack);
-	}
-}
