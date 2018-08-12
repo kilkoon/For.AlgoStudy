@@ -1,14 +1,40 @@
 #include <vector>
 #include <unordered_set>
 #include <math.h>
+#include <iostream>
 
 using namespace std;
 
 bool IsPrime(int num);
+vector<int> solution(int N, vector<int> &P, vector<int> &Q);
+
+void main()
+{
+	vector<int> Q;
+	vector<int> P;
+
+	P.emplace_back(1);
+	P.emplace_back(4);
+	P.emplace_back(16);
+
+	Q.emplace_back(26);
+	Q.emplace_back(10);
+	Q.emplace_back(20);
+
+
+	vector<int>  answer = solution(26, P, Q);
+
+	for (int n : answer)
+		cout << n<< endl;
+
+}
+
+
+
 vector<int> solution(int N, vector<int> &P, vector<int> &Q)
 {
 	unordered_set<int> primeNum;
-	primeNum.reserve(int(sqrt(N)));
+	primeNum.reserve(int(N));
 
 	for (int i = 2; i <= N; ++i)
 	{
@@ -30,8 +56,7 @@ vector<int> solution(int N, vector<int> &P, vector<int> &Q)
 			{
 				if (primeNum.end() != primeNum.find(i / divide))
 					++accCnt;
-				else
-					break;
+				break;
 			}
 		}
 		semiCnt[i] = accCnt;
