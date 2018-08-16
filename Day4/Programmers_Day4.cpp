@@ -62,9 +62,6 @@ int solution(string s) {
 	size_t len = s.length();
 	string str = s;
 
-	if (0 == len)
-		return 0;
-
 	for (size_t i = 0; i < len; ++i)
 	{
 		bool bEven = 0 == (len - i) % 2;
@@ -90,18 +87,14 @@ bool IsPalindrom(string & sub, bool bEven, size_t init, size_t num)
 			if (true == (sub[init + subLen - k] == sub[init + subLen + k - 1]))
 				bPelin = true;
 			else
-			{
 				return false;
-			}
 		}
 		else
 		{
 			if (true == (sub[init + subLen - k] == sub[init + subLen + k]))
 				bPelin = true;
 			else
-			{
 				return false;
-			}
 		}
 	}
 
