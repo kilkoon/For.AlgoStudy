@@ -93,5 +93,8 @@
     <ClCompile Include="FibFrog.cpp">
       <Filter>day5_codility</Filter>
     </ClCompile>
+    <ClCompile Include="MinMaxDivision.cpp">
+      <Filter>day5_codility</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
