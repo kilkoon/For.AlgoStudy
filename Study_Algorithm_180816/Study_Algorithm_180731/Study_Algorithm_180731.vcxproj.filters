@@ -25,6 +25,9 @@
     <Filter Include="day5_codility">
       <UniqueIdentifier>{675c910b-a758-4ebb-a31b-d34ebb6c606e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{065f5fc6-bc46-4666-88bb-5a39fcc2b578}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="피보나치.cpp">
@@ -94,6 +97,12 @@
       <Filter>day5_codility</Filter>
     </ClCompile>
     <ClCompile Include="MinMaxDivision.cpp">
+      <Filter>day5_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="소스.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberSolitaire.cpp">
       <Filter>day5_codility</Filter>
     </ClCompile>
   </ItemGroup>
