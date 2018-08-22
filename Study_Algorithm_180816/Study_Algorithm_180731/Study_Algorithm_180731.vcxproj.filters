@@ -105,5 +105,8 @@
     <ClCompile Include="NumberSolitaire.cpp">
       <Filter>day5_codility</Filter>
     </ClCompile>
+    <ClCompile Include="MaxNonOverlappingSegments.cpp">
+      <Filter>day5_codility</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
