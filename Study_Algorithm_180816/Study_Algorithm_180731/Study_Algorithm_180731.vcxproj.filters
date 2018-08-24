@@ -28,6 +28,9 @@
     <Filter Include="Test">
       <UniqueIdentifier>{065f5fc6-bc46-4666-88bb-5a39fcc2b578}</UniqueIdentifier>
     </Filter>
+    <Filter Include="etc">
+      <UniqueIdentifier>{8d5e3b15-aa9d-4afe-8d2a-8a2559acd0b9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="피보나치.cpp">
@@ -107,6 +110,9 @@
     </ClCompile>
     <ClCompile Include="MaxNonOverlappingSegments.cpp">
       <Filter>day5_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="2X타일링.cpp">
+      <Filter>etc</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
