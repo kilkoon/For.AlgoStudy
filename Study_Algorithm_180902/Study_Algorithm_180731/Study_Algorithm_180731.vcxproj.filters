@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="day3_codility">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="day3_programmers">
+      <UniqueIdentifier>{6ee83fa9-5f74-42ab-a365-1865873b2a5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="day4_programmers">
+      <UniqueIdentifier>{3854b59d-fd5a-4815-b6ac-b978f6d893f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="day4_codility">
+      <UniqueIdentifier>{eac83d6f-19bb-4d04-ba40-4ee2ec9167be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="day5_codility">
+      <UniqueIdentifier>{675c910b-a758-4ebb-a31b-d34ebb6c606e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{065f5fc6-bc46-4666-88bb-5a39fcc2b578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="etc">
+      <UniqueIdentifier>{8d5e3b15-aa9d-4afe-8d2a-8a2559acd0b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="For.RealPractice">
+      <UniqueIdentifier>{0138c8c8-72e1-48de-8064-f68c63757027}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="피보나치.cpp">
+      <Filter>day3_programmers</Filter>
+    </ClCompile>
+    <ClCompile Include="JadenCase 문자열 만들기.cpp">
+      <Filter>day3_programmers</Filter>
+    </ClCompile>
+    <ClCompile Include="최솟값 만들기.cpp">
+      <Filter>day3_programmers</Filter>
+    </ClCompile>
+    <ClCompile Include="다음큰숫자.cpp">
+      <Filter>day3_programmers</Filter>
+    </ClCompile>
+    <ClCompile Include="MaxProductOfThree.cpp">
+      <Filter>day3_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>day3_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="가장큰정사각형찾기.cpp">
+      <Filter>day3_programmers</Filter>
+    </ClCompile>
+    <ClCompile Include="숫자의 표현.cpp">
+      <Filter>day3_programmers</Filter>
+    </ClCompile>
+    <ClCompile Include="fish.cpp">
+      <Filter>day3_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="StoneWall.cpp">
+      <Filter>day3_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberOfDiscsIntersections.cpp">
+      <Filter>day3_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="equiLeader.cpp">
+      <Filter>day3_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="dominator.cpp">
+      <Filter>day3_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="행렬의곱셈.cpp">
+      <Filter>day4_programmers</Filter>
+    </ClCompile>
+    <ClCompile Include="N개의최소공배수.cpp">
+      <Filter>day4_programmers</Filter>
+    </ClCompile>
+    <ClCompile Include="거스름돈.cpp">
+      <Filter>day4_programmers</Filter>
+    </ClCompile>
+    <ClCompile Include="가장긴팰린드롬.cpp">
+      <Filter>day4_programmers</Filter>
+    </ClCompile>
+    <ClCompile Include="MaxDoubleSliceSum.cpp">
+      <Filter>day4_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="CountFactors.cpp">
+      <Filter>day4_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="CountSemiPrimes.cpp">
+      <Filter>day4_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="ChocolatesByNumbers.cpp">
+      <Filter>day5_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="FibFrog.cpp">
+      <Filter>day5_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="MinMaxDivision.cpp">
+      <Filter>day5_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="소스.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberSolitaire.cpp">
+      <Filter>day5_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="MaxNonOverlappingSegments.cpp">
+      <Filter>day5_codility</Filter>
+    </ClCompile>
+    <ClCompile Include="2X타일링.cpp">
+      <Filter>etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Answer.2.cpp">
+      <Filter>For.RealPractice</Filter>
+    </ClCompile>
+    <ClCompile Include="Answer.3.cpp">
+      <Filter>For.RealPractice</Filter>
+    </ClCompile>
+    <ClCompile Include="Answer.1.cpp">
+      <Filter>For.RealPractice</Filter>
+    </ClCompile>
+    <ClCompile Include="Answer.4.cpp">
+      <Filter>For.RealPractice</Filter>
+    </ClCompile>
+    <ClCompile Include="Answer.5.cpp">
+      <Filter>For.RealPractice</Filter>
+    </ClCompile>
+    <ClCompile Include="Answer.6.cpp">
+      <Filter>For.RealPractice</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
